@@ -1,4 +1,4 @@
-package com.example.paymentapi;
+package com.paymentapi;
 
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.boot.testcontainers.service.connection.ServiceConnection;

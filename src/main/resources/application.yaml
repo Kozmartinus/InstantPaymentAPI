@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: paymentapi
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=payments
+    username: postgres
+    password:
+  kafka:
+    bootstrap-servers: localhost:9092
