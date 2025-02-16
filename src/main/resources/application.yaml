@@ -3,8 +3,18 @@ spring:
     name: paymentapi
   datasource:
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=payments
+    url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
     password:
+  jpa:
+    hibernate:
+        ddl-auto: create
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
   kafka:
     bootstrap-servers: localhost:9092
+security:
+  basic:
+    enable: false
